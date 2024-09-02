@@ -6,6 +6,10 @@ body {
     background-color: #000000;
 }
 
+h1 {
+    color: #ccc;
+}
+
 #grid {
     display: grid;
     grid-template-columns: repeat(50, 10px);
