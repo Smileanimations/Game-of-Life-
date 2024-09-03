@@ -119,6 +119,15 @@ function giveInfo() {
 
 createGrid();
 
+// var slider = document.getElementById("theRange");
+// var output = document.getElementById("test");
+// output.innerHTML = slider.value; // Display the default slider value
+
+// // Update the current slider value (each time you drag the slider handle)
+// slider.oninput = function() {
+//   output.innerHTML = this.value;
+// }
+
 startButton.addEventListener('click', startGame);
 stopButton.addEventListener('click', stopGame);
 randomButton.addEventListener('click', randomizeGrid);
