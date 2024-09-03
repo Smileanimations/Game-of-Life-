@@ -20,9 +20,13 @@ h1 {
 
 #rules {
     border: #ffff 5px solid;
-    padding-right: 120px;
     margin-bottom: 100px;
     margin-top: 75px;
+    margin-left: 300px;
+}
+
+#lifegame {
+    margin-right: 300px;
 }
 
 #grid {
