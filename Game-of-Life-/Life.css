@@ -25,7 +25,32 @@ h1 {
 }
 
 .cell.alive {
-    background-color: rgb(9, 240, 90);
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    animation: changeColor 5s infinite alternate;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    75% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: purple;
+    }
 }
 
 button {
