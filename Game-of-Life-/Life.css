@@ -10,6 +10,10 @@ h1 {
     color: #ccc;
 }
 
+#header {
+    text-align: center;
+}
+
 #grid {
     display: grid;
     grid-template-columns: repeat(50, 10px);
@@ -27,6 +31,14 @@ h1 {
 .cell.alive {
     background-color: #000;
     animation: changeColor 10s infinite alternate;
+}
+
+.buttons {
+    border: #ffff 3px;
+    border-radius: 16px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 @keyframes changeColor {
