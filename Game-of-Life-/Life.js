@@ -2,6 +2,7 @@ const gridElement = document.getElementById('grid');
 const startButton = document.getElementById('start-btn');
 const stopButton = document.getElementById('stop-btn');
 const randomButton = document.getElementById('random-btn');
+const resetButton = document.getElementById('reset-btn');
 
 const rows = 50;
 const cols = 50;
@@ -108,8 +109,13 @@ function randomizeGrid() {
     renderGrid();
 }
 
+function resetGrid() {
+    window.location.reload();
+}
+
 createGrid();
 
 startButton.addEventListener('click', startGame);
 stopButton.addEventListener('click', stopGame);
 randomButton.addEventListener('click', randomizeGrid);
+resetButton.addEventListener('click', resetGrid);
