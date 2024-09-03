@@ -10,8 +10,19 @@ h1 {
     color: #ccc;
 }
 
+#page {
+    display: flex;
+}
+
 #header {
     text-align: center;
+}
+
+#rules {
+    border: #ffff 5px solid;
+    padding-right: 120px;
+    margin-bottom: 100px;
+    margin-top: 75px;
 }
 
 #grid {
@@ -19,6 +30,11 @@ h1 {
     grid-template-columns: repeat(50, 10px);
     grid-template-rows: repeat(50, 10px);
     margin: 20px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
 }
 
 #slider {
@@ -44,6 +60,10 @@ h1 {
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.ruletext {
+    color:white;
 }
 
 @keyframes changeColor {

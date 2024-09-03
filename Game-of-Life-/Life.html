@@ -9,25 +9,27 @@
 </head>
 
 <body>
-    <div id="header">
-        <h1>Conway's Game of Life</h1>
-    </div>
-
-    <!--Niks in de grid div plaatsen dit bevat, no surprise: de grid-->
-    <div id="grid"></div>
-    <div>
-        <button id="start-btn" class="buttons">Start</button>
-        <button id="stop-btn" class="buttons">Stop</button>
-        <button id="random-btn" class="buttons">Randomize</button>
-        <button id="reset-btn" class="buttons">Reset</button>
-        <details>
-            <summary>Info</summary>
-            <p>Con lentitud poderosa</p>
-          </details>
-        <div class="slidecontainer" id="slider">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <div id="page">
+        <div id="rules">
+            <h3 class="ruletext">Rules of Conway's Game of Life:</h3>
+            <p class="ruletext">1. </p>
         </div>
-        
+        <div>
+            <div id="header">
+                <h1>Conway's Game of Life</h1>
+            </div>
+            <!--Niks in de grid div plaatsen dit bevat, no surprise: de grid-->
+            <div id="grid"></div>
+            <div id="buttons">
+                <button id="start-btn" class="buttons">Start</button>
+                <button id="stop-btn" class="buttons">Stop</button>
+                <button id="random-btn" class="buttons">Randomize</button>
+                <button id="reset-btn" class="buttons">Reset</button>
+            </div>
+            <div class="slidecontainer" id="slider">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+        </div>
     </div>
     <script src="Life.js"></script>
 
