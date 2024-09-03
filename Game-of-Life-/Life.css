@@ -25,8 +25,6 @@ h1 {
 }
 
 .cell.alive {
-    width: 20px;
-    height: 20px;
     background-color: #000;
     animation: changeColor 5s infinite alternate;
 }
