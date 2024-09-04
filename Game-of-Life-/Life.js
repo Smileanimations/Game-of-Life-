@@ -120,13 +120,12 @@ function giveInfo() {
     //wip;
 }
 
-// Event listener for the speed slider
+
 speedSlider.addEventListener('input', function () {
     const speedValue = speedSlider.value;
-    speedValueDisplay.textContent = speedValue;  // Update the displayed speed value
-    updateInterval = 1000 - (speedValue * 10);  // Convert slider value to interval (e.g., 50% -> 500ms)
+    speedValueDisplay.textContent = speedValue;
+    updateInterval = 1000 - (speedValue * 10);
 
-    // If the game is running, restart it with the new interval speed
     if (interval) {
         clearInterval(interval);
         interval = setInterval(updateGrid, updateInterval);
