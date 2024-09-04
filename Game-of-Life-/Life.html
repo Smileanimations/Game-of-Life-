@@ -13,11 +13,30 @@
         <div id="rules">
             <h3 class="ruletext">Info:</h3>
             <p class="ruletext">Conway's Game of Life, geconceptualiseerd door John Conway, is een cellulaire automaton
-                die volgens een simpele set regels de uitbreiding/implosie van populaties simuleert. De regels zijn als volgt:
-                1.
-                2.
-                3.
-                4.
+                die volgens een simpele set regels de uitbreiding/implosie van populaties simuleert. De regels zijn als
+                volgt:
+            </p>
+            <p> 1. Als een cel door 2 of 3 gekleurde buurcellen omgeven wordt, blijft deze cel zelf ook gekleurd, zoals
+                in het voorbeeld hieronder.
+            </p>
+            <img src="Info_afbeeldingen/cel_1.png">
+            <p> deze afbeelding blijft de middelste cel gekleurd, want de cel wordt omgeven door 2 andere gekleurde
+                cellen.
+            </p>
+            <p> 2. Als een cel door 4 of meer gekleurde buurcellen omgeven wordt, gaat deze cel dood door
+                'overbevolking' (dat wil zeggen, de cel wordt wit).
+                Als een cel door minder dan twee gekleurde buurcellen omgeven wordt,
+                gaat deze cel ook dood, maar dan door eenzaamheid. Zie voorbeeld hieronder.
+                <img src="Info_afbeeldingen/cel_2.png">
+            <p> deze afbeelding gaat de middelste cel dood, want de cel wordt door meer dan 3 of minder dan 2
+                gekleurde cellen omgeven.
+            </p>
+            <p> Als een dode cel wordt omgeven door precies 3 gekleurde buurcellen, wordt deze dode cel ook gekleurd
+                ('geboren'), zoals in het voorbeeld hieronder.
+            </p>
+            <img src="Info_afbeeldingen/cel_3.png">
+            <p> deze afbeelding wordt de middelste cel geboren, want de cel wordt door exact 3 gekleurde cellen
+                omgeven.
             </p>
         </div>
         <div id="lifegame">
@@ -33,7 +52,7 @@
                 <button id="reset-btn" class="buttons">Reset</button>
             </div>
             <div class="slidecontainer" id="slider">
-                <input type="range" min="10" max="100" value="50" class="slider" id="speed-slider">
+                <input type="range" min="10" max="100" value="10" class="slider" id="speed-slider">
                 <span id="speed-value"></span>
             </div>
         </div>
