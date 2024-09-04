@@ -1,3 +1,16 @@
+<?php
+declare(strict_types=1);
+
+include_once('connection.php');
+
+session_start();
+
+$sql = "SELECT * FROM patterns";
+$stmt = $conn->query($sql);
+$patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,6 +63,25 @@
 
             </p>
         </div>
+        <h1 class="title" style="color: black;">Currently registered crew members</h1>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Appearance</th>
+            <th>Name</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <?php foreach ($patterns as $index => $pattern) { ?>
+          <tr>
+            <td><img src="images/<?php echo $pattern['title']?>.png" alt="" class="icons"></td>
+            <td><?= $pattern["title"] ?></td>
+            <td><?= $pattern["details"] ?></td>
+          </tr>
+        <?php } ?>
+      </table>
+    </div>
         <div id="lifegame">
             <div id="header">
                 <h1>Conway's Game of Life</h1>
