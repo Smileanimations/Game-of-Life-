@@ -27,10 +27,12 @@ p {
 }
 
 #rules {
+    position: static;
     border: #ffff 5px solid;
     margin-bottom: 100px;
     margin-top: 75px;
     margin-left: 300px;
+    padding: 10px;
 }
 
 #lifegame {
