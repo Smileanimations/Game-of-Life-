@@ -3,11 +3,14 @@ const startButton = document.getElementById('start-btn');
 const stopButton = document.getElementById('stop-btn');
 const randomButton = document.getElementById('random-btn');
 const resetButton = document.getElementById('reset-btn');
+const speedSlider = document.getElementById('speed-slider');
+const speedValueDisplay = document.getElementById('speed-value');
 
 const rows = 50;
 const cols = 50;
 let grid = [];
 let interval = null;
+let updateInterval = 500;  // Default to 500ms
 
 function createGrid() {
     grid = [];
@@ -116,6 +119,19 @@ function resetGrid() {
 function giveInfo() {
     //wip;
 }
+
+// Event listener for the speed slider
+speedSlider.addEventListener('input', function () {
+    const speedValue = speedSlider.value;
+    speedValueDisplay.textContent = speedValue;  // Update the displayed speed value
+    updateInterval = 1000 - (speedValue * 10);  // Convert slider value to interval (e.g., 50% -> 500ms)
+
+    // If the game is running, restart it with the new interval speed
+    if (interval) {
+        clearInterval(interval);
+        interval = setInterval(updateGrid, updateInterval);
+    }
+});
 
 createGrid();
 
