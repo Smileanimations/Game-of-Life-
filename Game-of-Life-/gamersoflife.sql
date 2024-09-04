@@ -8,7 +8,7 @@ CREATE TABLE `patterns` (
     id MEDIUMINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(25),
     details VARCHAR(300)
-)
+);
 
 INSERT INTO `patterns` (`title`, `details`) Values 
     ('Glider', 'Het kleinste spaceship, volgt een diagonale lijn. De richting wordt bepaald door de "punt" in het patroon.'),
