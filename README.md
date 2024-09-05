@@ -17,23 +17,11 @@ Game of Life is a zero player game, meaning that the player has little to no inv
 
 When a cell is placed it will stay alive for one generation and then die. This is because a cell cannot live on its own, it will die of underpopulation.
 
-To keep a cell alive it must be surrounded by 2 or 3 other cells
+1. To keep a cell alive it must be surrounded by 2 or 3 other cells
 
-![](C:\Users\mark%20van%20der%20veen\AppData\Roaming\marktext\images\2024-09-05-10-52-55-cel_1.png) 
+2. If a cell is surrounded by more than 3 other cells it will die of overpopulation.
 
-
-
-If a cell is surrounded by more than 3 other cells it will die of overpopulation.
-
-![]((http://localhost/GitHub/Game-of-Life-/Info_afbeeldingen/cel_2.png))
-
-
-
-Lastly, if a "deadspace" has 3 surrounding cells that space will turn into a live cell
-
-![](C:\Users\mark%20van%20der%20veen\AppData\Roaming\marktext\images\2024-09-05-10-54-27-cel_3.png)
-
-
+3. Lastly, if a "deadspace" has 3 surrounding cells that space will turn into a live cell
 
 These 3 simple rules are the principle of the Game of Life.
 
