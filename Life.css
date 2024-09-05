@@ -133,3 +133,8 @@ details > summary {
     margin: 0;
     box-shadow: 1px 1px 2px #bbbbbb;
   }
+
+  img {
+    width: 200px; /* Stel de gewenste breedte in */
+    height: 200px; /* Stel de gewenste hoogte in */
+  }
