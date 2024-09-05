@@ -12,7 +12,7 @@
     <div class="container">
         <div class="column">
         <a href="Life.php">&crarr;Back</a>
-        Your pattern, named "<?= $name; ?>" has been added!<br>
+        "<?= $name; ?>" has been added!<br>
         </div>
     </div>
 </body>
