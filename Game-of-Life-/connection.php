@@ -4,12 +4,12 @@ const SESSION_LOGGEDIN_KEY="loggedin";
 const SESSION_USERNAME_KEY="username";
 const SESSION_PASSWORD_KEY="password";
 
-$ip = '127.0.0.1';
-$username = 'bit_academy';
+$ip = 'localhost';
+$username = 'root';
 $password = 'xc6cvYYg-Q1WZ]p3';
 
 try {
-    $conn = new PDO("mysql:dbname=gameoflife;host=$ip", $username, $password); 
+    $conn = new PDO("mysql:dbname=gameoflife;host=$ip", $username); 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
