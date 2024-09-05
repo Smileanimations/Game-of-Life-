@@ -99,6 +99,9 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
             echo "</tr>"?>
       </table>
     </div>
+    <div>
+        <h2 class="title">Submit pattern</h2>
+    </div>
 </body>
 
 </html>
