@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Life.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <a href="Life.php">&crarr;Back</a>
+            <h1 class="title">Pattern submission form</h1>
+            <form method="POST" name="form" action="Form_request.php">
+                <div class="fontsize">
+                    <div class="patterninfo">
+                        <label for="patternname">Pattern name</label>
+                        <p></p>
+                        <input type="text" id="patternname" name="patternname">
+                        <p></p>
+                        <label for="image">Image</label>
+                        <p></p>
+                        <input type="image" id="image" name="image">
+                        <p></p>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Details</p>
+                            <textarea id="descofpattern" name="descofpattern" rows="4" cols="50" maxlength="300"
+                                placeholder="Describe your pattern in 300 words or less."></textarea>
+                        </div>
+                        <p></p>
+                        <div>
+                            <input class="submit" name="submit" value="SUBMIT" type="submit">
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
