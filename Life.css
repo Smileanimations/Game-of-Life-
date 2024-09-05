@@ -114,6 +114,10 @@ button {
     cursor: pointer;
 }
 
+#dabutton {
+    cursor: pointer;
+}
+
 details > summary {
     padding: 4px;
     width: 200px;
