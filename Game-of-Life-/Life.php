@@ -28,38 +28,34 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div id="page">
         <div id="rules">
             <h3 class="ruletext">Rules:</h3>
-            <p class="ruletext">Conway's Game of Life, geconceptualiseerd door John Conway, is een cellulaire automaton
-                die volgens een simpele set regels de uitbreiding/implosie van populaties simuleert. De regels zijn als
-                volgt:
+            <p class="ruletext">Conway's Game of Life, conceptualized by John Conway, is a cellular automaton
+            that simulates the expansion/implosion of populations according to a simple set of rules. The rules are as follows:
 
             </p>
-            <p> 1. Als een cel door 2 of 3 gekleurde buurcellen omgeven wordt, blijft deze cel zelf ook gekleurd, zoals
-                in het voorbeeld hieronder.
+            <p> 1. If a cell is surrounded by 2 or 3 colored neighboring cells, that cell itself remains colored, 
+                as in the example below.
 
             </p>
             <img src="Info_afbeeldingen/cel_1.png">
-            <p> deze afbeelding blijft de middelste cel gekleurd, want de cel wordt omgeven door 2 andere gekleurde
-                cellen.
+            <p> In this image the middle cell remains colored, because the cell is surrounded by 2 other colored cells.
 
             </p>
-            <p> 2. Als een cel door 4 of meer gekleurde buurcellen omgeven wordt, gaat deze cel dood door
-                'overbevolking' (dat wil zeggen, de cel wordt wit).</p>
-            <p> Als een cel door minder dan twee gekleurde buurcellen omgeven wordt,
-                gaat deze cel ook dood, maar dan door eenzaamheid. Zie voorbeeld hieronder.
+            <p> 2. If a cell is surrounded by 4 or more colored neighboring cells, that cell dies from 'overcrowding' 
+                (that is, the cell turns white).</p>
+            <p> If a cell is surrounded by less than two colored neighboring cells,
+                this cell also dies, but then from loneliness. See example below.
 
             </p>
                 <img src="Info_afbeeldingen/cel_2.png">
-            <p> deze afbeelding gaat de middelste cel dood, want de cel wordt door meer dan 3 of minder dan 2
-                gekleurde cellen omgeven.
+            <p> In this image the middle cell dies because the cell is surrounded by more than 3 or less than 2 colored cells.
 
             </p>
-            <p> 3. Als een dode cel wordt omgeven door precies 3 gekleurde buurcellen, wordt deze dode cel ook gekleurd
-                ('geboren'), zoals in het voorbeeld hieronder.
+            <p> 3. If a dead cell is surrounded by exactly 3 colored neighboring cells, 
+                this dead cell is also colored ('born'), as in the example below.
 
             </p>
             <img src="Info_afbeeldingen/cel_3.png">
-            <p> deze afbeelding wordt de middelste cel geboren, want de cel wordt door exact 3 gekleurde cellen
-                omgeven.
+            <p> In this image the middle cell is born, because the cell is surrounded by exactly 3 colored cells.
 
             </p>
         </div>
@@ -96,9 +92,9 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     if ($i++ % 3 == 0) {
                         echo "<tr>";
                     }?>
-                    <td><?= $pattern["title"] ?></td>
-                    <td><img src="images/<?php echo $pattern['title']?>.png" alt="" class="icons"></td>
-                    <td><?= $pattern["details"] ?></td>
+                        <td><?= $pattern["title"] ?></td>
+                        <td><img src="images/<?php echo $pattern['title']?>.png" alt="" class="icons"></td>
+                        <td><?= $pattern["details"] ?></td>
             <?php } 
             echo "</tr>"?>
       </table>
