@@ -72,7 +72,7 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <button id="reset-btn" class="buttons">Reset</button>
             </div>
             <div class="slidecontainer" id="slider">
-                <input type="range" min="10" max="100" value="100" class="slider" id="speed-slider">
+                <input type="range" min="10" max="100" value="80" class="slider" id="speed-slider">
                 <span id="speed-value"></span>
             </div>
         </div>
@@ -98,6 +98,9 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php } 
             echo "</tr>"?>
       </table>
+    </div>
+    <div>
+        <h2 class="title">Submit pattern</h2>
     </div>
 </body>
 
