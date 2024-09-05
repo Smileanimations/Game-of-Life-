@@ -83,7 +83,7 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
     <script src="Life.js"></script>
-    <h1 class="title">Info</h1>
+    <h1 class="title">Patterns</h1>
     <div>
       <table>
             <?php 
