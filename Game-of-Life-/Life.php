@@ -95,7 +95,7 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <button id="reset-btn" class="buttons">Reset</button>
             </div>
             <div class="slidecontainer" id="slider">
-                <input type="range" min="10" max="100" value="10" class="slider" id="speed-slider">
+                <input type="range" min="10" max="100" value="100" class="slider" id="speed-slider">
                 <span id="speed-value"></span>
             </div>
         </div>
