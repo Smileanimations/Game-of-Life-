@@ -18,10 +18,3 @@ INSERT INTO `patterns` (`title`, `details`) Values
     ('Blinker', 'De meest voorkomende en kleinste oscillator.'),
     ('Blockandglider', 'Een methuselah die eindigt met een losse glider.'),
     ('Diehard', 'Een methuselah die totaal sterft na 130 generaties.');
-
-CREATE TABLE `user_patterns` (
-    id MEDIUMINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(25) NOT NULL,
-    details VARCHAR(300) NOT NULL
-);
-
