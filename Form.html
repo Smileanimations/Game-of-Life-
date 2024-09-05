@@ -9,38 +9,30 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="column">
-            <a href="Life.php">&crarr;Back</a>
-            <h1 class="title">Pattern submission form</h1>
-            <form method="POST" name="form" action="Form_request.php">
-                <div class="fontsize">
-                    <div class="patterninfo">
-                        <h1><label for="patternname">Pattern name</label></h1>
-                        <p></p>
-                        <input type="text" id="patternname" name="patternname"
-                            placeholder="Give your pattern a name.">
-                        <p></p>
-                        <h1><label for="image">Image</label></h1>
-                        <p></p>
-                        <input type="image" id="image" name="image">
-                        <p></p>
-                    </div>
-                    <div>
-                        <div>
-                            <p>Details</p>
-                            <textarea id="descofpattern" name="descofpattern" rows="4" cols="50" maxlength="300"
-                                placeholder="Describe your pattern in 300 words or less."></textarea>
-                        </div>
-                        <p></p>
-                        <div>
-                            <input class="submit" name="submit" value="SUBMIT" type="submit">
-                        </div>
-                    </div>
-                </div>
-            </form>
+    <a href="Life.php">&crarr;Back</a>
+    <h1 class="title">Pattern submission form</h1>
+    <form method="POST" name="form" action="Form_request.php">
+        <div>
+            <h1><label for="patternname">Pattern name</label></h1>
+            <p></p>
+            <input type="text" id="patternname" name="patternname"
+                placeholder="Give your pattern a name.">
+            <p></p>
+            <h1><label for="image">Image</label></h1>
+            <p></p>
+            <input type="image" id="image" name="image">
+            <p></p>
         </div>
-    </div>
+        <div>
+            <p>Details</p>
+            <textarea id="descofpattern" name="descofpattern" rows="4" cols="50" maxlength="300"
+                placeholder="Describe your pattern in 300 words or less."></textarea>
+        </div>
+        <p></p>
+        <div>
+            <input class="submit" name="submit" value="SUBMIT" type="submit">
+        </div>
+    </form>
 </body>
 
 </html>
