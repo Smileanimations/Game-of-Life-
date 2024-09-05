@@ -4,7 +4,7 @@ const SESSION_LOGGEDIN_KEY="loggedin";
 const SESSION_USERNAME_KEY="username";
 const SESSION_PASSWORD_KEY="password";
 
-$ip = '127.0.0.1';
+$ip = 'localhost';
 $username = 'root';
 $password = 'xc6cvYYg-Q1WZ]p3';
 
