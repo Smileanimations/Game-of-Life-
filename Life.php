@@ -100,7 +100,7 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
       </table>
     </div>
     <div>
-        <h2 class="title">Submit pattern</h2>
+        <h2 class="title"><a href="Form.html">Submit Pattern</a></h2>
     </div>
 </body>
 
