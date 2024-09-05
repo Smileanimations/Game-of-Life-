@@ -17,5 +17,5 @@ INSERT INTO `patterns` (`title`, `details`) Values
     ('Toad', 'A periode 2 oscillator. De tweede meest voorkomende oscillator (na de blinker).'),
     ('Blinker', 'De meest voorkomende en kleinste oscillator.'),
     ('Blockandglider', 'Een methuselah die eindigt met een losse glider.'),
-    ('Diehard', 'Een methuselah die totaal sterft na 130 generaties.'),
-    ('Fox', 'De kleinste asymmetrische periode 2 oscillator.');
+    ('Diehard', 'Een methuselah die totaal sterft na 130 generaties.');
+    
