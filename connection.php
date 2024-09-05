@@ -6,7 +6,6 @@ const SESSION_PASSWORD_KEY="password";
 
 $ip = 'localhost';
 $username = 'root';
-$password = 'xc6cvYYg-Q1WZ]p3';
 
 try {
     $conn = new PDO("mysql:dbname=gameoflife;host=$ip", $username); 

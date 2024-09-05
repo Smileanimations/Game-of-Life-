@@ -26,7 +26,31 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
     <div id="page">
-        <div id="rules">
+        <div id="lifegame">
+            <div id="header">
+                <h1>Conway's Game of Life</h1>
+            </div>
+            <!--Niks in de grid div plaatsen dit bevat, no surprise: de grid-->
+            <div id="grid"></div>
+            <div id="buttons">
+                <button id="start-btn" class="buttons">Start</button>
+                <button id="stop-btn" class="buttons">Stop</button>
+                <button id="random-btn" class="buttons">Randomize</button>
+                <button id="reset-btn" class="buttons">Reset</button>
+            </div>
+            <div class="slidecontainer" id="slider">
+                <input type="range" min="10" max="100" value="80" class="slider" id="speed-slider">
+                <span id="speed-value"></span>
+            </div>
+        </div>
+        <div id="legend">
+            <p>Young</p>
+            <div id="legendbox"></div>
+            <p>Old</p>
+        </div>
+    </div>
+    <script src="Life.js"></script>
+    <div id="rules">
             <h3 class="ruletext">Rules:</h3>
             <p class="ruletext">Conway's Game of Life, conceptualized by John Conway, is a cellular automaton
             that simulates the expansion/implosion of populations according to a simple set of rules. The rules are as follows:
@@ -58,32 +82,8 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <p> In this image the middle cell is born, because the cell is surrounded by exactly 3 colored cells.
 
             </p>
-        </div>
-        <div id="lifegame">
-            <div id="header">
-                <h1>Conway's Game of Life</h1>
-            </div>
-            <!--Niks in de grid div plaatsen dit bevat, no surprise: de grid-->
-            <div id="grid"></div>
-            <div id="buttons">
-                <button id="start-btn" class="buttons">Start</button>
-                <button id="stop-btn" class="buttons">Stop</button>
-                <button id="random-btn" class="buttons">Randomize</button>
-                <button id="reset-btn" class="buttons">Reset</button>
-            </div>
-            <div class="slidecontainer" id="slider">
-                <input type="range" min="10" max="100" value="80" class="slider" id="speed-slider">
-                <span id="speed-value"></span>
-            </div>
-        </div>
-        <div id="legend">
-            <p>Young</p>
-            <div id="legendbox"></div>
-            <p>Old</p>
-        </div>
     </div>
-    <script src="Life.js"></script>
-    <h1 class="title">Info</h1>
+    <h1 class="title">Patterns</h1>
     <div>
       <table>
             <?php 
