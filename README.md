@@ -25,7 +25,7 @@ To keep a cell alive it must be surrounded by 2 or 3 other cells
 
 If a cell is surrounded by more than 3 other cells it will die of overpopulation.
 
-![](C:\Users\mark%20van%20der%20veen\AppData\Roaming\marktext\images\2024-09-05-10-53-34-cel_2.png)
+![]((http://localhost/GitHub/Game-of-Life-/Info_afbeeldingen/cel_2.png))
 
 
 
