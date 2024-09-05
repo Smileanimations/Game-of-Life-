@@ -63,7 +63,7 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             </p>
         </div>
-        <h1 class="title" style="color: black;">Currently registered crew members</h1>
+        <h1 class="title">Info</h1>
     <div>
       <table>
         <thead>
