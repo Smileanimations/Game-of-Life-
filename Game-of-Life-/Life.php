@@ -27,7 +27,7 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <div id="page">
         <div id="rules">
-            <h3 class="ruletext">Info:</h3>
+            <h3 class="ruletext">Rules:</h3>
             <p class="ruletext">Conway's Game of Life, geconceptualiseerd door John Conway, is een cellulaire automaton
                 die volgens een simpele set regels de uitbreiding/implosie van populaties simuleert. De regels zijn als
                 volgt:
@@ -63,25 +63,6 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             </p>
         </div>
-        <h1 class="title">Info</h1>
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Appearance</th>
-            <th>Name</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <?php foreach ($patterns as $index => $pattern) { ?>
-          <tr>
-            <td><img src="images/<?php echo $pattern['title']?>.png" alt="" class="icons"></td>
-            <td><?= $pattern["title"] ?></td>
-            <td><?= $pattern["details"] ?></td>
-          </tr>
-        <?php } ?>
-      </table>
-    </div>
         <div id="lifegame">
             <div id="header">
                 <h1>Conway's Game of Life</h1>
@@ -106,7 +87,22 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
     <script src="Life.js"></script>
-
+    <h1 class="title">Info</h1>
+    <div>
+      <table>
+            <?php 
+            $i = 0;
+                foreach ($patterns as $index => $pattern) { 
+                    if ($i++ % 3 == 0) {
+                        echo "<tr>";
+                    }?>
+                    <td><?= $pattern["title"] ?></td>
+                    <td><img src="images/<?php echo $pattern['title']?>.png" alt="" class="icons"></td>
+                    <td><?= $pattern["details"] ?></td>
+            <?php } 
+            echo "</tr>"?>
+      </table>
+    </div>
 </body>
 
 </html>
