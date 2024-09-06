@@ -1,6 +1,5 @@
 # Conway's Game of Life
 
----
 
 Our interpretation of John Conway's Game of Life made in HTML.
 
