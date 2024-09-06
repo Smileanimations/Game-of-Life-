@@ -93,7 +93,7 @@ $patterns = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         echo "<tr>";
                     }?>
                         <td><?= $pattern["title"] ?></td>
-                        <td><img src="images/<?php echo $pattern['title']?>.png" alt="" class="icons"></td>
+                        <td><img src="images/<?php echo $pattern['image']?>" alt="" class="icons"></td>
                         <td><?= $pattern["details"] ?></td>
             <?php } 
             echo "</tr>"?>

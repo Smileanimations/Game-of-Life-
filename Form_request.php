@@ -1,17 +1,17 @@
 <?php 
 include "connection.php";
 
-    $name = $_POST['patternname']; 
-    $image= $_FILES['image']; 
-    $details = $_POST['descofpattern']; 
+$name = $_POST['patternname']; 
+$image= $_FILES['image']; 
+$imagename = $_FILES['image']['name'];
+$details = $_POST['descofpattern']; 
 
-    var_dump($_FILES);
-
-    // Create insert query and insert the new user
-$sql = "INSERT INTO patterns (title, details) VALUES (:title, :details)";
+// Create insert query and insert the new user
+$sql = "INSERT INTO patterns (title, details, image) VALUES (:title, :details, :image)";
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':title', $name);
 $stmt->bindParam(':details', $details);
+$stmt->bindParam(':image',$imagename);
 
 // feedback on error
 if (false === $stmt->execute()) {
