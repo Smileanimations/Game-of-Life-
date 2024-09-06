@@ -1,0 +1,19 @@
+Reflectie|
+---------
+
+Plus en min punten
+
++ Samenwerken ging erg goed.
++ Communicatie was feilloos.
+
+- Concentratie was soms wat minder.
+- Richtingloose planning in het begin.
+
+----------------------------------------
+
+Actie punten
+
+1. Sneller met een vast plan op komen, met minder losse ideeën.
+2. Gemotiveerde start onderhouden
+3. Frequente commit messages
+
