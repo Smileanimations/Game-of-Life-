@@ -13,7 +13,6 @@ $stmt->bindParam(':title', $name);
 $stmt->bindParam(':details', $details);
 $stmt->bindParam(':image',$imagename);
 
-// feedback on error
 if (false === $stmt->execute()) {
     exit("DB error: " . $stmt->errorInfo()[2] . "\n");
 }
@@ -24,7 +23,6 @@ $target_file = $target_dir . basename($_FILES["image"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-// Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
   $check = getimagesize($_FILES["image"]["tmp_name"]);
   if($check !== false) {
@@ -36,13 +34,11 @@ if(isset($_POST["submit"])) {
   }
 }
 
-// Check if file already exists
 if (file_exists($target_file)) {
   echo "Sorry, file already exists.";
   $uploadOk = 0;
 }
 
-// Check file size
 if ($_FILES["image"]["size"] > 500000) {
   echo "Sorry, your file is too large.";
   $uploadOk = 0;
@@ -55,10 +51,9 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
   $uploadOk = 0;
 }
 
-// Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
   echo "Sorry, your file was not uploaded.";
-// if everything is ok, try to upload file
+
 } else {
   if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["image"]["name"])). " has been uploaded.";
@@ -77,7 +72,7 @@ if ($uploadOk == 0) {
     <div class="container">
         <div class="column">
         <a href="Life.php">&crarr;Back</a>
-        "<?= $name; ?>" has been added!<br>
+        <p>"<?= $name; ?>" has been added!</p>
         </div>
     </div>
 </body>
