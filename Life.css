@@ -21,6 +21,11 @@ h2 {
     cursor: pointer;
 }
 
+td {
+    margin: 20px;
+    padding-left: 20px;
+}
+
 #page {
     display: flex;
 }
