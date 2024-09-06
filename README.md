@@ -50,3 +50,5 @@ To start the action simply press start, adjust the speed with the slider and wat
 #### Uploading custom patterns:
 
 At the bottom of the page you can submit custom images that can be displayed in the table featuring all the patterns. Simply think of a name, a discription and upload an image *(With a supported file type)* and press submit than head back to the main page and see your own pattern on display!
+
+PS: Trello bord link is as follows: https://trello.com/b/CZCHgV8e
