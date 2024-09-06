@@ -21,11 +21,6 @@ h2 {
     cursor: pointer;
 }
 
-img {
-    max-width: 116px;
-    max-height: 114px;
-}
-
 #page {
     display: flex;
 }
@@ -90,6 +85,12 @@ img {
     padding-right: 25px;
 }
 
+.icons {
+    max-width: 116px;
+    max-height: 114px;
+}
+
+
 @keyframes changeColor {
     0% {
         background-color: red;
@@ -130,16 +131,11 @@ details > summary {
     border: none;
     box-shadow: 1px 1px 2px #bbbbbb;
     cursor: pointer;
-  }
+}
   
-  details > p {
+details > p {
     background-color: #eeeeee;
     padding: 4px;
     margin: 0;
     box-shadow: 1px 1px 2px #bbbbbb;
-  }
-
-  img {
-    width: 200px; /* Stel de gewenste breedte in */
-    height: 200px; /* Stel de gewenste hoogte in */
-  }
+}
