@@ -21,6 +21,11 @@ h2 {
     cursor: pointer;
 }
 
+img {
+    max-width: 116px;
+    max-height: 114px;
+}
+
 #page {
     display: flex;
 }
